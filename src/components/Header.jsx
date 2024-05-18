@@ -1,17 +1,16 @@
-import { useState } from "react";
 import { Link } from "react-scroll";
 import DownloadBtn from "./DownloadBtn";
 import MobileNavbar from "./MobileNavbar";
-function Header({ onScrollToSection }) {
-  const [showMobileNav, setShowMobileNav] = useState(false);
+function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
+  // const [showMobileNav, setShowMobileNav] = useState(false);
 
-  const handleMobileNav = () => {
-    setShowMobileNav(!showMobileNav);
-  };
+  // const handleMobileNav = () => {
+  //   setShowMobileNav(!showMobileNav);
+  // };
 
   return (
     <header
-      className={` sticky top-0 z-30 w-full border-b border-transparent bg-gray-100 max-md:border-gray-50 `}
+      className={` sticky top-0 z-30 w-full border-b border-transparent bg-slate-50 max-md:border-gray-50 `}
     >
       <div className="w-full max-w-7xl mx-auto p-4 md:px-8  flex justify-between items-center">
         <Link
@@ -21,7 +20,7 @@ function Header({ onScrollToSection }) {
           onClick={() => onScrollToSection("about")}
           className="cursor-pointer"
         >
-          <h3 className="text-2xl md:text-3xl text-gray-900 font-bold tracking-[-0.02em]">
+          <h3 className="text-2xl md:text-3xl  font-bold tracking-[-0.02em] bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500 inline-block text-transparent bg-clip-text">
             &lt;PD /&gt;{" "}
           </h3>
         </Link>
@@ -31,6 +30,7 @@ function Header({ onScrollToSection }) {
               to="about"
               spy={true}
               smooth={true}
+              offset={-120}
               onClick={() => onScrollToSection("about")}
               className={`text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer`}
             >
@@ -42,6 +42,7 @@ function Header({ onScrollToSection }) {
               to="skills"
               spy={true}
               smooth={true}
+              offset={-70}
               onClick={() => onScrollToSection("skills")}
               className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
@@ -53,6 +54,7 @@ function Header({ onScrollToSection }) {
               to="problem-solving"
               spy={true}
               smooth={true}
+              offset={-70}
               onClick={() => onScrollToSection("problem-solving")}
               className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
@@ -64,6 +66,7 @@ function Header({ onScrollToSection }) {
               to="projects"
               spy={true}
               smooth={true}
+              offset={-70}
               onClick={() => onScrollToSection("projects")}
               className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600  cursor-pointer"
             >
@@ -75,13 +78,14 @@ function Header({ onScrollToSection }) {
               to="others"
               spy={true}
               smooth={true}
+              offset={-70}
               onClick={() => onScrollToSection("others")}
               className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
               others
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="recommendation"
               spy={true}
@@ -90,6 +94,18 @@ function Header({ onScrollToSection }) {
               className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
               recommendation
+            </Link>
+          </li> */}
+          <li>
+            <Link
+              to="contact-me"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              onClick={() => onScrollToSection("contact-me")}
+              className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+            >
+              Contact Me
             </Link>
           </li>
         </ul>
@@ -102,7 +118,7 @@ function Header({ onScrollToSection }) {
 
         {/* hamburger button */}
         <button
-          onClick={handleMobileNav}
+          onClick={onHandleMobileNav}
           id="menu-btn"
           className="block  lg:hidden focus:outline-none"
         >
@@ -113,7 +129,8 @@ function Header({ onScrollToSection }) {
 
         <MobileNavbar
           showMobileNav={showMobileNav}
-          onCloseMobileNav={handleMobileNav}
+          onCloseMobileNav={onHandleMobileNav}
+          onScrollToSection={onScrollToSection}
         />
       </div>
     </header>

@@ -5,10 +5,10 @@ function Education() {
   return (
     <div className=" mt-12 w-full gap-4 md:gap-0 grid grid-cols-9 md:px-2 md:py-12">
       <div
-        className="col-start-2 col-end-10 md:col-span-4 w-full h-full "
+        className="col-start-2 col-end-10 md:col-span-4 w-full h-full shadow-md hover:shadow-lg"
         style={{ overflow: "hidden", transform: "none" }}
       >
-        <div className="w-full h-full bg-[#FCF4FF] rounded-md p-4 md:pl-4">
+        <div className="w-full h-full bg-blue-50 rounded-md p-4 md:pl-4">
           <div className="flex gap-4 justify-center">
             <div className="flex md:items-center">
               <img className="h-16 md:h-22 w-24" src={universityImg} alt="" />
@@ -28,8 +28,8 @@ function Education() {
         </div>
       </div>
       <div className=" relative row-start-1  md:col-start-5 md:col-span-1  w-full h-full flex justify-center items-center">
-        <div className="h-full w-1 bg-gray-400"></div>
-        <div className="absolute w-6 h-6 rounded-full bg-indigo-400 z-1 text-white text-center">
+        <div className="h-full w-1 bg-gray-300"></div>
+        <div className="absolute w-6 h-6 rounded-full bg-blue-600 z-1 text-gray-50 text-center">
           1
         </div>
       </div>
@@ -37,16 +37,16 @@ function Education() {
       <div className="md:col-span-4 w-full h-full"></div>
       {/* <!-- second  tab  --> */}
       <div className="relative col-start-1 col-end-2  md:col-start-5 md:col-end-6  w-full h-full flex justify-center items-center">
-        <div className="h-full w-1 bg-gray-400"></div>
-        <div className="absolute w-6 h-6 rounded-full bg-indigo-400 z-1 text-white text-center">
+        <div className="h-full w-1 bg-gray-300"></div>
+        <div className="absolute w-6 h-6 rounded-full bg-blue-600 z-1 text-gray-50 text-center">
           2
         </div>
       </div>
       <div
-        className=" col-start-2 col-end-10 md:col-start-6 md:col-end-10 w-full h-full "
+        className=" col-start-2 col-end-10 md:col-start-6 md:col-end-10 w-full h-full shadow-md hover:shadow-lg"
         style={{ overflow: "hidden", transform: "none" }}
       >
-        <div className="w-full h-full bg-[#FEFAF0] rounded-md p-4 md:pl-4">
+        <div className="w-full h-full bg-blue-100 rounded-md p-4 md:pl-4">
           <div className="flex gap-4 ">
             <div className="flex md:items-center ">
               <img className="h-38 w-28" src={collegeImg} alt="" />
@@ -69,10 +69,10 @@ function Education() {
       {/* <!-- third tab  --> */}
 
       <div
-        className="col-start-2 col-end-10 md:col-span-4 w-full h-full "
+        className="col-start-2 col-end-10 md:col-span-4 w-full h-full  shadow-md hover:shadow-lg"
         style={{ overflow: "hidden", transform: "none" }}
       >
-        <div className="w-full h-full bg-[#FFF4F4] rounded-md p-4 md:pl-4">
+        <div className="w-full h-full bg-blue-50 rounded-md p-4 md:pl-4">
           <div>
             <img src="" alt="" />
           </div>
@@ -89,8 +89,8 @@ function Education() {
         </div>
       </div>
       <div className="relative row-start-4  md:row-start-3 md:col-start-5  w-full h-full flex justify-center items-center">
-        <div className="h-full w-1 bg-gray-400"></div>
-        <div className="absolute w-6 h-6 rounded-full bg-indigo-400 z-1 text-white text-center">
+        <div className="h-full w-1 bg-gray-300"></div>
+        <div className="absolute w-6 h-6 rounded-full bg-blue-600 z-1 text-gray-50 text-center">
           3
         </div>
       </div>

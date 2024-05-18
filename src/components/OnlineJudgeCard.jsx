@@ -1,6 +1,6 @@
 function OnlineJudgeCard({ judge }) {
   return (
-    <div className=" flex   items-center gap-4 p-4 border rounded-lg shadow-lg bg-gray-50">
+    <div className="relative group flex items-center gap-4 p-4 border  rounded-lg shadow-md hover:shadow-xl bg-gray-50">
       {/* <!-- image  --> */}
       <div>
         <img className="h-18 w-16" src={judge.src} alt="" />
@@ -9,13 +9,19 @@ function OnlineJudgeCard({ judge }) {
       {/* <!-- content  --> */}
       <div className="">
         <h5 className="text-2xl font-medium capitalize">{judge.name}</h5>
-        <p className="text-base ">Handle:P_D_5( Max rating: 1381 )</p>
-        <div className="flex justify-end mt-2">
+        <p className="text-base mb-8">
+          Handle: {judge.handle}{" "}
+          {judge.maxRating ? `(Max rating: ${judge?.maxRating})` : ``}{" "}
+        </p>
+        <div className="absolute bottom-3 right-4 ">
           <a
-            href="https://codeforces.com/profile/P_D_5"
-            className="px-4 py-1 border border-gray-300 rounded-xl text-lg  capitalize "
+            href={judge.link}
+            target="_blank"
+            className="  border-2 border-blue-500 bg-gray-50 text-blue-600 hover:bg-blue-500 hover:text-gray-50 rounded-md text-lg  capitalize "
           >
-            more details
+            <span className=" px-6 py-1 ">
+              <i className="fa-solid fa-link"></i>
+            </span>
           </a>
         </div>
       </div>

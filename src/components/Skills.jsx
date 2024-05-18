@@ -12,15 +12,15 @@ function Skills() {
     return <Skill skill={skill} key={skill.index} />;
   });
   return (
-    <section className="border-2 border-red-500" id="skills">
+    <section className="" id="skills">
       {/* <!-- container  --> */}
       {/* <!-- title  --> */}
-      <div className=" flex flex-col gap-3  items-center mt-24 pb-12 ">
+      <div className="bg-slate-50 flex flex-col gap-3  items-center pt-16 pb-12 ">
         <h5 className="font-semibold text-xl">my skills</h5>
         <h3 className="font-semibold text-4xl md:text-5xl">Skills</h3>
       </div>
       {/* <!-- languages  --> */}
-      <div className=" bg-gray-100">
+      <div className=" bg-zinc-100 py-12">
         {/* <!-- container  --> */}
         <div className="max-w-7xl mx-auto p-4 md:px-8">
           {/* <!-- language  --> */}

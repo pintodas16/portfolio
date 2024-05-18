@@ -1,7 +1,7 @@
 function Project({ project }) {
   return (
-    <div className=" px-3 py-6 ">
-      <div className="bg-white  border rounded-xl shadow-lg  md:max-w-sm mx-auto">
+    <div className="group px-3 py-6 ">
+      <div className="bg-white  border rounded-xl shadow-md hover:shadow-xl md:max-w-sm mx-auto">
         {/* <!-- image  --> */}
         <div className="p-4 overflow-hidden">
           <img className="rounded-lg" src="./images/pinto.jpg" alt="" />
@@ -9,13 +9,15 @@ function Project({ project }) {
         {/* <!-- content  --> */}
 
         <div className="px-3 py-4">
-          <div className="flex items-center  justify-between">
-            <h5 className="text-xl uppercase font-semibold">{project.name}</h5>
-            <div className="flex items-center gap-2">
-              <span className="px-2 py-0.5 border rounded-lg text-xl">
+          <div className="flex items-center  justify-between ">
+            <h5 className="text-xl uppercase font-semibold py-2">
+              {project.name}
+            </h5>
+            <div className="hidden transition-all group-hover:duration-100 group-hover:delay-100 group-hover:flex items-center gap-2">
+              <span className="px-2 py-0.5 border border-blue-500 bg-gray-50 text-blue-600 hover:bg-blue-500 hover:text-gray-50 rounded-md text-lg  capitalize ">
                 <i className="fa-brands fa-github"></i>
               </span>
-              <span className="px-2 py-0.5 border rounded-lg text-xl">
+              <span className="px-2 py-0.5 border border-blue-500 bg-gray-50 text-blue-600 hover:bg-blue-500 hover:text-gray-50 rounded-md text-lg  capitalize ">
                 <i className="fa-solid fa-link"></i>
               </span>
             </div>

@@ -69,21 +69,32 @@ export const onlineJudges = [
     index: 0,
     name: "codeforces",
     src: "./assets/images/problem solving/code-forces.svg",
+    link: "https://codeforces.com/profile/P_D_5",
+    maxRating: 1381,
+    handle: "P_D_5",
   },
   {
     index: 1,
     name: "codechef",
     src: "/assets/images/problem solving/icons8-codechef-100.png",
+    link: "https://www.codechef.com/users/pinto",
+    maxRating: 1633,
+    handle: "pinto das",
   },
   {
     index: 2,
     name: "leetcode",
     src: "/assets/images/problem solving/leetcode.svg",
+    link: "https://leetcode.com/u/P_D_5/",
+    maxRating: 1461,
+    handle: "P_D_5",
   },
 
   {
     index: 3,
     name: "hackerrank",
-    src: "assets/images/problem solving/atom.png",
+    src: "assets/images/problem solving/hackerrank.png",
+    link: "https://www.hackerrank.com/profile/pintodas_lu",
+    handle: "P_D_5",
   },
 ];

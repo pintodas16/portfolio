@@ -1,7 +1,7 @@
 import { useRef } from "react";
+import { Link } from "react-scroll";
 import DownloadBtn from "./DownloadBtn";
-
-function MobileNavbar({ showMobileNav, onCloseMobileNav }) {
+function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
   // handle close modal when user click outside of the form
   const mobileNav = useRef();
   const handleCloseMobileNav = (e) => {
@@ -10,13 +10,18 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav }) {
     }
   };
 
+  const handleClickOnNavLink = (sectionId) => {
+    onScrollToSection(sectionId);
+    onCloseMobileNav();
+  };
+
   return (
     <div
       ref={mobileNav}
       onClick={handleCloseMobileNav}
       className={` ${
         showMobileNav ? "" : "hidden"
-      } fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm`}
+      } fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm`}
     >
       <div className="absolute right-0 w-1/2 h-full bg-white ">
         <div className="relative">
@@ -28,52 +33,88 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav }) {
           <div className="  bg-white py-10 px-6 h-full flex flex-col gap-4">
             <ul className=" mt-6 flex flex-col list-none  gap-4">
               <li>
-                <a
-                  href="#about"
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600"
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  onClick={() => handleClickOnNavLink("about")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#skills"
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600"
+                <Link
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  onClick={() => handleClickOnNavLink("skills")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#problem-solving"
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600"
+                <Link
+                  to="problem-solving"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  onClick={() => handleClickOnNavLink("problem-solving")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   problem solving
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#project"
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600"
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  onClick={() => handleClickOnNavLink("projects")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   project
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#others"
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600"
+                <Link
+                  to="others"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  onClick={() => handleClickOnNavLink("others")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   others
-                </a>
+                </Link>
               </li>
-              <li>
-                <a
-                  href="#recommendation"
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600"
+              {/* <li>
+                <Link
+                  to="recommendation"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  onClick={() => handleClickOnNavLink("recommendation")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   recommendation
-                </a>
+                </Link>
+              </li> */}
+              <li>
+                <Link
+                  to="contact-me"
+                  spy={true}
+                  smooth={true}
+                  offset={-110}
+                  onClick={() => handleClickOnNavLink("contact-me")}
+                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                >
+                  Contact Me
+                </Link>
               </li>
             </ul>
 

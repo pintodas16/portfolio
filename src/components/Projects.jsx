@@ -18,28 +18,28 @@ function Projects({ activeSection }) {
   });
   return (
     <section
-      className="border border-yellow-400"
+      className=""
       id="projects"
       // className={`${activeSection === "projects" && "mt-[80px]"}`}
     >
       {/* <!-- title  --> */}
-      <div className=" flex flex-col gap-3  items-center mt-24 pb-12 ">
+      <div className="bg-slate-50 flex flex-col gap-3  items-center pt-16 pb-12 ">
         <h5 className="font-semibold text-xl">Visit my projects</h5>
         <h3 className="font-semibold text-4xl md:text-5xl">Projects</h3>
       </div>
 
       {/* <!--projects  --> */}
-      <div className=" bg-gray-white">
+      <div className=" bg-zinc-100">
         {/* <!-- container  --> */}
         <div className="max-w-7xl mx-auto p-4 md:px-8">
           {/* <!-- nav bar for projects  --> */}
           {/* <!-- container  --> */}
-          <div className=" ">
+          <div className="">
             {/* <!-- flex-container  --> */}
-            <div className="flex justify-center items-center ">
-              <div className="flex gap-8 border rounded-lg px-6 py-2 text-xl font-semibold uppercase">
+            <div className="flex justify-center items-center pt-10 ">
+              <div className="flex gap-8 border-2 border-blue-600 rounded-lg px-6 py-2 text-xl font-semibold uppercase">
                 <div
-                  className={` border-r-2 pr-6 ${
+                  className={` border-r-2 border-r-gray-300 pr-6 ${
                     tabStatus == "all" ? "text-gray-900" : "text-gray-300"
                   }`}
                 >
@@ -52,7 +52,7 @@ function Projects({ activeSection }) {
                   </button>
                 </div>
                 <div
-                  className={`border-r-2 pr-6  ${
+                  className={`border-r-2 border-r-gray-300 pr-6  ${
                     tabStatus == "frontend" ? "text-gray-900" : "text-gray-300"
                   }`}
                 >

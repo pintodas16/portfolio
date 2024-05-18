@@ -12,7 +12,7 @@ function DownloadBtn({ className }) {
   return (
     <button
       onClick={handleDownloadPdf}
-      className={` ${className} px-4 py-1.5 border-2 border-blue-600 bg-blue-600 text-gray-50 font-medium rounded-xl transition-colors hover:bg-gray-100 hover:text-blue-600 active:bg-blue-700 active:text-gray-500`}
+      className={` ${className} px-4 py-1.5 border-2 border-blue-500 bg-blue-500 text-gray-50 font-medium rounded-xl transition-colors hover:bg-gray-100 hover:text-blue-600 active:bg-blue-700 active:text-gray-500`}
     >
       Download CV
     </button>
