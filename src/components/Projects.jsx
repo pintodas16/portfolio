@@ -27,7 +27,7 @@ function Projects({ activeSection }) {
         {/* <h5 className="font-semibold text-xl">Visit my projects</h5>
         <h3 className="font-semibold text-4xl md:text-5xl">Projects</h3> */}
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
-        <h3 className="font-custom font-semibold text-3xl md:text-4xl lg:text-5xl">
+        <h3 className="font-custom font-semibold text-2xl md:text-4xl lg:text-5xl">
           My Projects
         </h3>
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
@@ -89,7 +89,7 @@ function Projects({ activeSection }) {
           </div>
           {/* <!-- project  --> */}
           <div className="mt-6 mb-6 transition-all delay-100">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4  ">
+            <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-4  ">
               {sortProjects.map((project) => (
                 <Project project={project} key={project.index} />
               ))}

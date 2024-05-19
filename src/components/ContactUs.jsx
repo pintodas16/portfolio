@@ -59,7 +59,7 @@ function ContactUs() {
         <h3 className="font-semibold text-4xl md:text-5xl">Contact</h3> */}
 
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
-        <h3 className="font-custom font-semibold text-3xl md:text-4xl lg:text-5xl">
+        <h3 className="font-custom font-semibold text-2xl md:text-4xl lg:text-5xl">
           Contact Me
         </h3>
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
@@ -75,18 +75,34 @@ function ContactUs() {
             </h5>
             <div className="flex justify-center items-center gap-4 ">
               {/* linkedin  */}
-              <span className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg">
+              <a
+                href="https://www.linkedin.com/in/pinto-das-01425a196/"
+                target="_blank"
+                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+              >
                 <i className="fa-brands fa-linkedin-in"></i>
-              </span>
-              <span className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg">
+              </a>
+              <a
+                href="https://github.com/pintodas16"
+                target="_blank"
+                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+              >
                 <i className="fa-brands fa-github"></i>
-              </span>
-              <span className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg">
+              </a>
+              <a
+                href="https://github.com/pintodas16"
+                target="_blank"
+                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+              >
                 <i className="fa-brands fa-facebook"></i>
-              </span>
-              <span className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg">
+              </a>
+              <a
+                href="https://github.com/pintodas16"
+                target="_blank"
+                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+              >
                 <i className="fa-brands fa-instagram"></i>
-              </span>
+              </a>
             </div>
           </div>
 

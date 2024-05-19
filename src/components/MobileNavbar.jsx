@@ -37,7 +37,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-70}
                   onClick={() => handleClickOnNavLink("about")}
                   className="text-xl  font-custom font-medium uppercase text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
@@ -49,7 +49,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   to="skills"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-70}
                   onClick={() => handleClickOnNavLink("skills")}
                   className="text-xl  font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
@@ -61,7 +61,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   to="problem-solving"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-70}
                   onClick={() => handleClickOnNavLink("problem-solving")}
                   className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
@@ -73,7 +73,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   to="projects"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-70}
                   onClick={() => handleClickOnNavLink("projects")}
                   className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
@@ -85,7 +85,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   to="others"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-70}
                   onClick={() => handleClickOnNavLink("others")}
                   className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
@@ -109,7 +109,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   to="contact-me"
                   spy={true}
                   smooth={true}
-                  offset={-110}
+                  offset={-70}
                   onClick={() => handleClickOnNavLink("contact-me")}
                   className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >

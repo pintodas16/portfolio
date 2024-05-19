@@ -9,7 +9,7 @@ function HomeSection() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [" Front-end Developer", " JavaScript Developer"],
+      strings: [" Web Developer", " Competitive-Programmer"],
       startDelay: 300,
       typeSpeed: 100,
       backSpeed: 100,
@@ -37,18 +37,16 @@ function HomeSection() {
               <p className="text-xl font-custom font-semibold uppercase py-2">
                 Welcome to my World !
               </p>
-              <h1 className="text-4xl font-custom font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl  text-gray-900 py-2">
+              <h1 className="text-4xl uppercase font-custom font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl  text-gray-900 py-2">
                 Hi, I&apos;m
                 <span className="ml-2 font-custom  text-4xl te md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl ">
                   <span className="px-3 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-400 relative inline-block italic ml-1 mr-2">
-                    <span className="font-custom relative text-white">
-                      Pinto
-                    </span>
+                    <span className=" relative text-white">Pinto</span>
                   </span>
                   Das
                 </span>
               </h1>
-              <h2 className="text-3xl font-semibold md:font-bold md:text-3xl md:tracking-[-0.02em]  lg:text-4xl  text-gray-900 py-2 ">
+              <h2 className="text-3xl uppercase font-custom font-semibold md:font-bold md:text-3xl md:tracking-[-0.02em]  lg:text-4xl  text-gray-900 py-2 ">
                 A{" "}
                 <span
                   className="uppercase animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black"
@@ -56,16 +54,12 @@ function HomeSection() {
                 ></span>
               </h2>
               <p className="font-custom text-lg font-normal max-w-3xl">
-                My academic journey has equipped me with a strong foundation in
-                programming and web development technologies. In my first two
-                years of university life, I actively participated in online
-                contests and solved around 400 problems with several online
-                judges. I then switched to web development and studied the
-                foundations of this field. In addition, I completed a few
-                projects. These days, I primarily use React and Redux for
-                front-end development, and troubleshooting issues as they arise.
-                I have an insatiable curiosity for picking up new skills and
-                finding practical solutions to issues.
+                I am a highly motivated computer science student and competitive
+                programmer. HTML, CSS, JavaScript, and frameworks like React and
+                Redux are my areas of expertise in web development. A history of
+                creating aesthetically beautiful and responsive web apps.
+                Passionate about expanding the possibilities of digital
+                experiences and learning more about web development.
               </p>
             </div>
             <div className="flex flex-col gap-2">

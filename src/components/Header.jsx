@@ -17,6 +17,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
           to="about"
           spy={true}
           smooth={true}
+          offset={-100}
           onClick={() => onScrollToSection("about")}
           className="cursor-pointer"
         >
