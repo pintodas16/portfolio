@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <section className="bg-zinc-100 ">
+    <section className="bg-slate-50 ">
       <div className="max-w-7xl mx-auto py-10 md:px-8 ">
         <div>
           <p className="capitalize text-md text-center ">

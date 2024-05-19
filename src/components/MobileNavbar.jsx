@@ -23,7 +23,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
         showMobileNav ? "" : "hidden"
       } fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm`}
     >
-      <div className="absolute right-0 w-1/2 h-full bg-white ">
+      <div className="absolute right-0 w-2/3  h-full bg-white ">
         <div className="relative">
           <div onClick={onCloseMobileNav} className="absolute right-6 top-5 ">
             <i className="text-3xl bg-transparent fa-solid fa-xmark cursor-pointer"></i>

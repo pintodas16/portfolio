@@ -2,7 +2,7 @@
 // import Img from "/assets/images/pintoOne.png";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import ImgFinal from "../../public/assets/images/pinto.jpg";
+import ImgFinal from "/assets/images/pinto.jpg";
 // import Img from "/assets/images/pintoTwo.png";
 function HomeSection() {
   const el = useRef(null);
@@ -28,7 +28,7 @@ function HomeSection() {
   return (
     <section id="about" className=" w-full bg-slate-50 ">
       {/* <!-- container  -->  mt-16 md:mt-20 2xl:mt-24 mt-24 pb-12*/}
-      <div className="max-w-7xl mx-auto p-4 md:px-8 pt-16 ">
+      <div className="max-w-7xl mx-auto p-4 md:px-8 pt-16 pb-16 ">
         {/* <!-- flex container  --> */}
         <div className="flex flex-col-reverse gap-16 md:gap-20  md:flex-row justify-center items-center">
           {/* <!-- content  --> */}
@@ -68,12 +68,14 @@ function HomeSection() {
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <i className="fa-solid fa-location-dot"></i>
-                <p className="text-base text-normal">Sylhet,Bangladesh</p>
+                <i className="fa-solid fa-location-dot animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black"></i>
+                <p className="text-lg font-medium uppercase">
+                  Sylhet, Bangladesh
+                </p>
               </div>
               <div className="flex gap-2 items-center">
-                <span className="block h-2 w-2 rounded-full bg-green-400 animate-ping"></span>
-                <p className="text-base text-normal">
+                <span className="block h-2 w-2 rounded-full  bg-blue-500 animate-ping"></span>
+                <p className="text-lg font-medium uppercase">
                   Available for new projects
                 </p>
               </div>
@@ -103,7 +105,7 @@ function HomeSection() {
             <img
               src={ImgFinal}
               alt=""
-              className="max-w-full h-auto border-[20px] border-white shadow-xl  rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"
+              className="max-w-full h-auto border-[20px] border-white shadow-2xl  rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"
             />
           </div>
         </div>

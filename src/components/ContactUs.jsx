@@ -1,10 +1,68 @@
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 function ContactUs() {
+  const serviceKey = import.meta.env.VITE_SERVICE_KEY;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+  const templateId = import.meta.env.VITE_TEMPLATE_ID;
+  const form = useRef();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [description, setDescription] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(`${serviceKey}`, `${templateId}`, form.current, {
+        publicKey: `${publicKey}`,
+      })
+      .then(
+        () => {
+          setName("");
+          setEmail("");
+          setDescription("");
+
+          // toast("I will contact you within very short while!", {
+          //   position: "bottom-center",
+          //   autoClose: 5000,
+          //   hideProgressBar: false,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          //   theme: "colored",
+          //   transition: Bounce,
+          // });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          // toast("There is some wrong happen!", {
+          //   position: "bottom-center",
+          //   autoClose: 5000,
+          //   hideProgressBar: false,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          //   theme: "colored",
+          //   transition: Bounce,
+          // });
+        }
+      );
+  };
   return (
-    <section className="bg-slate-50" id="contact-me">
+    <section className="bg-zinc-100" id="contact-me">
       {/* <!-- title  --> */}
-      <div className=" flex flex-col gap-3  items-center pt-16  ">
-        <h5 className="font-semibold text-xl">My contact info</h5>
-        <h3 className="font-semibold text-4xl md:text-5xl">Contact</h3>
+      <div className=" flex  gap-2 justify-center  items-center pt-16  ">
+        {/* <h5 className="font-semibold text-xl">My contact info</h5>
+        <h3 className="font-semibold text-4xl md:text-5xl">Contact</h3> */}
+
+        <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
+        <h3 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
+          Contact Me
+        </h3>
+        <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
       </div>
       {/* container div  */}
       <div className="max-w-7xl mx-auto p-4 md:px-8 mt-16 pb-12 ">
@@ -34,7 +92,7 @@ function ContactUs() {
 
           {/* contact me  */}
           <div className="basis-8/12 ">
-            <form action="">
+            <form action="" ref={form} onSubmit={sendEmail}>
               <div className="flex flex-col gap-2">
                 <div className="flex justify-center items-center gap-6">
                   <div className="w-1/2 flex flex-col gap-1 ">
@@ -42,9 +100,13 @@ function ContactUs() {
                       Name
                     </label>
                     <input
-                      className="mt-1 px-3 py-3 bg-white border  border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 shadow-md hover:shadow-lg"
+                      className="mt-1 px-3 py-3 bg-white border  border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 shadow-md hover:shadow-lg text-xl font-medium"
                       type="text"
+                      name="name"
                       placeholder="Enter your Name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="w-1/2 flex flex-col gap-1">
@@ -52,9 +114,13 @@ function ContactUs() {
                       Email
                     </label>
                     <input
-                      className="mt-1 px-3 py-3 bg-white border  border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 shadow-md hover:shadow-lg"
+                      className="mt-1 px-3 py-3 bg-white border  border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 shadow-md hover:shadow-lg text-xl font-medium"
                       type="text"
+                      name="email"
                       placeholder="Enter your Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                   </div>
                 </div>
@@ -63,12 +129,15 @@ function ContactUs() {
                     Description
                   </label>
                   <textarea
-                    className=" p-2.5  bg-white border  border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 text-xl shadow-md hover:shadow-lg"
+                    className=" p-2.5  bg-white border  border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 text-xl font-medium shadow-md hover:shadow-lg "
                     placeholder="Write your thoughts here..."
                     id="w3review"
-                    name="w3review"
+                    name="message"
                     rows="4"
                     cols="50"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    required
                   ></textarea>
                 </div>
 

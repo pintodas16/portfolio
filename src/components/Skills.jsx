@@ -15,9 +15,11 @@ function Skills() {
     <section className="" id="skills">
       {/* <!-- container  --> */}
       {/* <!-- title  --> */}
-      <div className="bg-slate-50 flex flex-col gap-3  items-center pt-16 pb-12 ">
-        <h5 className="font-semibold text-xl">my skills</h5>
+      <div className="bg-zinc-100 flex justify-center gap-2  items-center pt-16 pb-6 ">
+        {/* <h5 className="font-semibold text-xl">my skills</h5> */}
+        <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
         <h3 className="font-semibold text-4xl md:text-5xl">Skills</h3>
+        <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
       </div>
       {/* <!-- languages  --> */}
       <div className=" bg-zinc-100 py-12">

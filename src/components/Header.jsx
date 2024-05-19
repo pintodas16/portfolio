@@ -21,7 +21,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
           className="cursor-pointer"
         >
           <h3 className="text-2xl md:text-3xl  font-bold tracking-[-0.02em] bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500 inline-block text-transparent bg-clip-text">
-            &lt;PD /&gt;{" "}
+            &lt;PD/&gt;{" "}
           </h3>
         </Link>
         <ul className="hidden lg:flex list-none items-center gap-6 ">
@@ -32,7 +32,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
               smooth={true}
               offset={-120}
               onClick={() => onScrollToSection("about")}
-              className={`text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer`}
+              className={`text-lg font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer`}
             >
               About
             </Link>
@@ -44,7 +44,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
               smooth={true}
               offset={-70}
               onClick={() => onScrollToSection("skills")}
-              className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+              className="text-lg font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
               Skills
             </Link>
@@ -56,7 +56,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
               smooth={true}
               offset={-70}
               onClick={() => onScrollToSection("problem-solving")}
-              className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+              className="text-lg font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
               Problem Solving
             </Link>
@@ -68,7 +68,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
               smooth={true}
               offset={-70}
               onClick={() => onScrollToSection("projects")}
-              className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600  cursor-pointer"
+              className="text-lg font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600  cursor-pointer"
             >
               Projects
             </Link>
@@ -80,7 +80,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
               smooth={true}
               offset={-70}
               onClick={() => onScrollToSection("others")}
-              className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+              className="text-lg font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
               others
             </Link>
@@ -103,7 +103,7 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
               smooth={true}
               offset={-120}
               onClick={() => onScrollToSection("contact-me")}
-              className="text-xl font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+              className="text-lg font-medium text-gray-900 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
             >
               Contact Me
             </Link>

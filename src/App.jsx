@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { ToastContainer } from "react-toastify";
 import ContactUs from "./components/ContactUs.jsx";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -38,6 +39,19 @@ function App() {
       <Others activeSection={activeSection} />
       {/* <Recommendation activeSection={activeSection} /> */}
       <ContactUs />
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition:Bounce
+      />
       <Footer />
     </>
   );
