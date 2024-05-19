@@ -6,10 +6,10 @@ function Training() {
         style={{ overflow: "hidden", transform: "none" }}
       >
         <div className="relative w-full h-full bg-blue-50 rounded-md p-4 md:pl-4">
-          <h4 className="text-black text-2xl font-medium py-1">
+          <h4 className="text-black text-2xl font-custom font-medium py-1">
             JavaScript (Intermediate) Certificate
           </h4>
-          <h5 className="text-black text-xl font-medium py-1  mb-6 ">
+          <h5 className="text-black text-xl font-custom font-normal py-1  mb-6 ">
             Leetcode(June 2022- July 2022)
           </h5>
 
@@ -46,10 +46,10 @@ function Training() {
         style={{ overflow: "hidden", transform: "none" }}
       >
         <div className="  relative w-full h-full bg-blue-100 rounded-md p-4 md:pl-4">
-          <h4 className="text-black text-2xl font-medium py-1">
+          <h4 className="text-black text-2xl font-custom font-medium py-1">
             javascript algorithms and data-structures
           </h4>
-          <h5 className="text-black text-xl font-medium py-1  mb-6 ">
+          <h5 className="text-black text-xl font-custom font-normal py-1  mb-6 ">
             freeCodeCamp(January 2023-August 2023)
           </h5>
 
@@ -74,8 +74,10 @@ function Training() {
         style={{ overflow: "hidden", transform: "none" }}
       >
         <div className="relative w-full h-full bg-blue-50 rounded-lg p-4 md:pl-4">
-          <h4 className="text-black text-2xl font-medium py-1">React Basics</h4>
-          <h5 className="text-black text-xl font-medium py-1  mb-6 ">
+          <h4 className="text-black text-2xl font-custom font-medium py-1">
+            React Basics
+          </h4>
+          <h5 className="text-black text-xlf  font-custom font-normal py-1  mb-6 ">
             Meta(November 2022-December 2022)
           </h5>
           <div className=" absolute right-5 bottom-3 ">
@@ -114,10 +116,10 @@ function Training() {
         style={{ overflow: "hidden", transform: "none" }}
       >
         <div className=" relative w-full h-full bg-blue-100 rounded-lg p-4 md:pl-4">
-          <h4 className="text-black text-2xl font-medium py-1">
+          <h4 className="text-black text-2xl font-custom  font-medium py-1">
             Python Data Structures
           </h4>
-          <h5 className="text-black text-xl font-medium py-1  mb-6 ">
+          <h5 className="text-black text-xl font-custom font-normal py-1  mb-6 ">
             University of Michigan(June 2022- July 2022)
           </h5>
 

@@ -27,7 +27,7 @@ function Projects({ activeSection }) {
         {/* <h5 className="font-semibold text-xl">Visit my projects</h5>
         <h3 className="font-semibold text-4xl md:text-5xl">Projects</h3> */}
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
-        <h3 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
+        <h3 className="font-custom font-semibold text-3xl md:text-4xl lg:text-5xl">
           My Projects
         </h3>
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>

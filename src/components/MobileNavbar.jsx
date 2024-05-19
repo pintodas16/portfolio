@@ -39,7 +39,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   smooth={true}
                   offset={-80}
                   onClick={() => handleClickOnNavLink("about")}
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                  className="text-xl  font-custom font-medium uppercase text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   About
                 </Link>
@@ -51,7 +51,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   smooth={true}
                   offset={-80}
                   onClick={() => handleClickOnNavLink("skills")}
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                  className="text-xl  font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   skills
                 </Link>
@@ -63,7 +63,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   smooth={true}
                   offset={-80}
                   onClick={() => handleClickOnNavLink("problem-solving")}
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                  className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   problem solving
                 </Link>
@@ -75,7 +75,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   smooth={true}
                   offset={-80}
                   onClick={() => handleClickOnNavLink("projects")}
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                  className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   project
                 </Link>
@@ -87,7 +87,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   smooth={true}
                   offset={-80}
                   onClick={() => handleClickOnNavLink("others")}
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                  className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   others
                 </Link>
@@ -111,7 +111,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
                   smooth={true}
                   offset={-110}
                   onClick={() => handleClickOnNavLink("contact-me")}
-                  className="text-xl font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
+                  className="text-xl font-custom  uppercase font-medium text-gray-600 transition-all hover:text-blue-600 active:text-gray-600 cursor-pointer"
                 >
                   Contact Me
                 </Link>

@@ -8,8 +8,12 @@ function ProblemSolving() {
     <section id="problem-solving" className="bg-slate-50">
       {/* <!-- title  --> */}
       <div className=" flex flex-col gap-3  items-center pt-16 pb-12 ">
-        <h5 className="font-semibold text-xl">solved around 450+ problems</h5>
-        <h3 className="font-semibold text-4xl md:text-5xl">problem solving</h3>
+        <h5 className="fnt-custom font-normal text-xl">
+          solved around 450+ problems
+        </h5>
+        <h3 className="font-custom font-semibold text-4xl md:text-5xl">
+          problem solving
+        </h3>
       </div>
 
       {/* <!-- languages  --> */}

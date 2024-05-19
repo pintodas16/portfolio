@@ -59,7 +59,7 @@ function ContactUs() {
         <h3 className="font-semibold text-4xl md:text-5xl">Contact</h3> */}
 
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
-        <h3 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
+        <h3 className="font-custom font-semibold text-3xl md:text-4xl lg:text-5xl">
           Contact Me
         </h3>
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
@@ -70,7 +70,7 @@ function ContactUs() {
         <div className="flex  flex-col-reverse gap-12 md:flex-row md:gap-20">
           {/* social media  */}
           <div className=" basis-3/12">
-            <h5 className="font-semibold text-xl mb-6  border-dotted border-b-2 pb-2 text-center">
+            <h5 className="font-custom uppercase font-semibold text-xl mb-6  border-dotted border-b-2 pb-2 text-center">
               Stay connected
             </h5>
             <div className="flex justify-center items-center gap-4 ">
@@ -96,7 +96,10 @@ function ContactUs() {
               <div className="flex flex-col gap-2">
                 <div className="flex justify-center items-center gap-6">
                   <div className="w-1/2 flex flex-col gap-1 ">
-                    <label className="text-lg font-medium" htmlFor="">
+                    <label
+                      className="text-lg font-custom uppercase font-medium"
+                      htmlFor=""
+                    >
                       Name
                     </label>
                     <input
@@ -110,7 +113,10 @@ function ContactUs() {
                     />
                   </div>
                   <div className="w-1/2 flex flex-col gap-1">
-                    <label className="text-lg font-medium" htmlFor="">
+                    <label
+                      className="text-lg font-custom uppercase font-medium"
+                      htmlFor=""
+                    >
                       Email
                     </label>
                     <input
@@ -125,7 +131,10 @@ function ContactUs() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label className="text-lg font-medium" htmlFor="">
+                  <label
+                    className="text-lg font-custom uppercase font-medium"
+                    htmlFor=""
+                  >
                     Description
                   </label>
                   <textarea
@@ -144,7 +153,7 @@ function ContactUs() {
                 {/* submit button  */}
                 <div className="flex justify-center mt-4">
                   <button
-                    className=" px-8 py-2 border-2 text-xl  border-blue-500 bg-blue-500 text-gray-50 font-medium rounded-lg transition-colors hover:bg-gray-100 hover:text-blue-600 shadow-md hover:shadow-lg"
+                    className=" px-8 py-2 border-2 text-xl  border-blue-500 bg-blue-500 text-gray-50 font-medium rounded-lg transition-colors hover:bg-gray-100 hover:text-blue-600 shadow-md hover:shadow-lg font-custom font-normal"
                     type="submit"
                   >
                     Send Message

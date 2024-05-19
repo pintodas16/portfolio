@@ -34,14 +34,16 @@ function HomeSection() {
           {/* <!-- content  --> */}
           <div className=" flex flex-col gap-6 ">
             <div className="flex flex-col gap-2">
-              <p className="text-xl font-semibold uppercase py-2">
+              <p className="text-xl font-custom font-semibold uppercase py-2">
                 Welcome to my World !
               </p>
-              <h1 className="text-4xl font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl  text-gray-900 py-2">
+              <h1 className="text-4xl font-custom font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl  text-gray-900 py-2">
                 Hi, I&apos;m
-                <span className="ml-2 text-4xl te md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl ">
+                <span className="ml-2 font-custom  text-4xl te md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl ">
                   <span className="px-3 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-400 relative inline-block italic ml-1 mr-2">
-                    <span className="relative text-white">Pinto</span>
+                    <span className="font-custom relative text-white">
+                      Pinto
+                    </span>
                   </span>
                   Das
                 </span>
@@ -53,7 +55,7 @@ function HomeSection() {
                   ref={el}
                 ></span>
               </h2>
-              <p className="font-montserratAl text-lg font-mono max-w-3xl">
+              <p className="font-custom text-lg font-normal max-w-3xl">
                 My academic journey has equipped me with a strong foundation in
                 programming and web development technologies. In my first two
                 years of university life, I actively participated in online
@@ -69,13 +71,13 @@ function HomeSection() {
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
                 <i className="fa-solid fa-location-dot animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500 bg-clip-text text-transparent  font-black"></i>
-                <p className="text-lg font-medium uppercase">
+                <p className="text-lg font-custom font-medium uppercase">
                   Sylhet, Bangladesh
                 </p>
               </div>
               <div className="flex gap-2 items-center">
                 <span className="block h-2 w-2 rounded-full  bg-blue-500 animate-ping"></span>
-                <p className="text-lg font-medium uppercase">
+                <p className="text-lg font-custom font-medium uppercase">
                   Available for new projects
                 </p>
               </div>

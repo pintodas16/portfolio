@@ -1,6 +1,6 @@
 import universityImg from "/assets/images/education and training/Leading_University_Logo.png";
+import school from "/assets/images/education and training/Madhabpur pilot high school.jpg";
 import collegeImg from "/assets/images/education and training/brindavan govt college.png";
-
 function Education() {
   return (
     <div className=" mt-12 w-full gap-4 md:gap-0 grid grid-cols-9 md:px-2 md:py-12">
@@ -14,15 +14,17 @@ function Education() {
               <img className="h-16 md:h-22 w-24" src={universityImg} alt="" />
             </div>
             <div>
-              <h1 className="text-black text-2xl font-medium py-1">
+              <h1 className="text-black text-2xl  py-1 font-custom font-medium">
                 Leading University
               </h1>
-              <h2 className="text-black text-xl  py-1 ">
+              <h2 className="text-black text-xl  py-1  font-custom font-normal">
                 Bachelor of Science in Computer Science and Engineering
               </h2>
 
-              <p className="text-lg font-semibold ">January 2018 - June 2022</p>
-              <p className="text-lg">Sylhet, Bangladesh</p>
+              <p className="text-lg  font-custom font-medium ">
+                January 2018 - June 2022
+              </p>
+              <p className="text-lg font-custom">Sylhet, Bangladesh</p>
             </div>
           </div>
         </div>
@@ -52,15 +54,17 @@ function Education() {
               <img className="h-38 w-28" src={collegeImg} alt="" />
             </div>
             <div>
-              <h1 className="text-black text-2xl font-medium py-1 ">
+              <h1 className="text-black text-2xl  py-1 font-custom font-medium ">
                 Brindavan Govt College
               </h1>
-              <h2 className="text-black text-xl  py-1 ">
+              <h2 className="text-black text-xl  py-1 font-custom font-normal">
                 {" "}
                 Higher Secondary School
               </h2>
-              <p className="text-lg font-semibold  ">July 2014 july 2014</p>
-              <p className="text-lg">Habiganj Bangladesh</p>
+              <p className="text-lg font-custom font-medium  ">
+                July 2014 july 2014
+              </p>
+              <p className="text-lg font-custom">Habiganj Bangladesh</p>
             </div>
           </div>
         </div>
@@ -73,19 +77,27 @@ function Education() {
         style={{ overflow: "hidden", transform: "none" }}
       >
         <div className="w-full h-full bg-blue-50 rounded-md p-4 md:pl-4">
-          <div>
-            <img src="" alt="" />
+          <div className="flex gap-4">
+            <div className="flex md:items-center ">
+              <img
+                className="h-16 md:h-22 w-24 rounded-xl"
+                src={school}
+                alt=""
+              />
+            </div>
+            <div>
+              <h1 className="text-black text-2xl font-custom font-medium py-1">
+                Madhabpur Pilot High School
+              </h1>
+              <h2 className="text-black text-xl  py-1 font-custom font-normal ">
+                Secondary School Certificate
+              </h2>
+              <p className=" text-lg pt-2 font-custom font-medium">
+                January 2010 - April 2014
+              </p>
+              <p className="text-lg font-custom">Madhabpur Bangladesh</p>
+            </div>
           </div>
-          <h1 className="text-black text-2xl font-medium py-1">
-            Madhabpur Pilot High School
-          </h1>
-          <h2 className="text-black text-xl  py-1  ">
-            Secondary School Certificate
-          </h2>
-          <p className=" text-lg pt-2 font-semibold">
-            January 2010 - April 2014
-          </p>
-          <p className="text-lg ">Madhabpur Bangladesh</p>
         </div>
       </div>
       <div className="relative row-start-4  md:row-start-3 md:col-start-5  w-full h-full flex justify-center items-center">

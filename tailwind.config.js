@@ -2,10 +2,18 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      montserratAl: ["montserrat-alternates", "sans-serif"],
-    },
     extend: {
+      fontFamily: {
+        // custom: ['"Montserrat Alternates"', '"sans-serif"'],
+        custom: `"Montserrat Alternates", sans-serif`,
+      },
+      fontWeight: {
+        "extra-light": 200,
+        bold: 700,
+        medium: 500,
+        normal: 400,
+      },
+
       animation: {
         text: "text 5s ease infinite",
       },

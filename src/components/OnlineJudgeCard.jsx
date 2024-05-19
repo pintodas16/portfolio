@@ -8,7 +8,9 @@ function OnlineJudgeCard({ judge }) {
       <div className="w-0.5 h-full bg-gray-300"></div>
       {/* <!-- content  --> */}
       <div className="">
-        <h5 className="text-2xl font-medium capitalize">{judge.name}</h5>
+        <h5 className="text-2xl font-custom font-normal uppercase">
+          {judge.name}
+        </h5>
         <p className="text-base mb-8">
           Handle: {judge.handle}{" "}
           {judge.maxRating ? `(Max rating: ${judge?.maxRating})` : ``}{" "}
