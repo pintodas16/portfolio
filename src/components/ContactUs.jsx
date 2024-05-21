@@ -67,51 +67,72 @@ function ContactUs() {
       {/* container div  */}
       <div className="max-w-7xl mx-auto p-4 md:px-8 mt-16 pb-12 ">
         {/* flex container  */}
-        <div className="flex  flex-col-reverse gap-12 md:flex-row md:gap-20">
+        <div className="flex flex-col-reverse gap-12 md:flex-row md:gap-20">
           {/* social media  */}
-          <div className=" basis-3/12">
-            <h5 className="font-custom uppercase font-semibold text-xl mb-6  border-dotted border-b-2 pb-2 text-center">
-              Stay connected
-            </h5>
-            <div className="flex justify-center items-center gap-4 ">
-              {/* linkedin  */}
-              <a
-                href="https://www.linkedin.com/in/pinto-das-01425a196/"
-                target="_blank"
-                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
-              >
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="https://github.com/pintodas16"
-                target="_blank"
-                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a
-                href="https://github.com/pintodas16"
-                target="_blank"
-                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
-              >
-                <i className="fa-brands fa-facebook"></i>
-              </a>
-              <a
-                href="https://github.com/pintodas16"
-                target="_blank"
-                className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
+          <div className=" basis-3/12 flex flex-col gap-6">
+            {/* social media  */}
+            <div>
+              <h5 className="font-custom uppercase font-semibold text-xl mb-4  border-dotted border-b-2 pb-2 ">
+                Stay connected
+              </h5>
+              <div className="flex justify-start items-center gap-4 ">
+                {/* linkedin  */}
+                <a
+                  href="https://www.linkedin.com/in/pinto-das-01425a196/"
+                  target="_blank"
+                  className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+                >
+                  <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/pintodas16"
+                  target="_blank"
+                  className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+                >
+                  <i className="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/pintodas/"
+                  target="_blank"
+                  className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+                >
+                  <i className="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/pintodas/"
+                  target="_blank"
+                  className="px-3 py-1 text-xl  border border-slate-300 hover:border-sky-500 hover:ring-sky-500  rounded-md  hover:ring-1 shadow-md hover:shadow-lg"
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            {/* email  */}
+            <div>
+              <h5 className="font-custom uppercase font-semibold text-xl mb-3  border-dotted border-b-2 pb-2 ">
+                Email
+              </h5>
+              <div className="  ">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pinto.cse.lu@gmail.com"
+                  target="_blank"
+                  className="flex items-center gap-2 text-lg font-custom font-semibold"
+                >
+                  <span>
+                    <i className="fa-regular fa-envelope"></i>
+                  </span>
+                  <p>pinto.cse.lu@gmail.com</p>
+                </a>
+              </div>
             </div>
           </div>
 
           {/* contact me  */}
           <div className="basis-8/12 ">
             <form action="" ref={form} onSubmit={sendEmail}>
-              <div className="flex flex-col gap-2">
-                <div className="flex justify-center items-center gap-6">
-                  <div className="w-1/2 flex flex-col gap-1 ">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+                  <div className="w-full md:w-1/2 flex flex-col gap-2 ">
                     <label
                       className="text-lg font-custom uppercase font-medium"
                       htmlFor=""
@@ -128,7 +149,7 @@ function ContactUs() {
                       required
                     />
                   </div>
-                  <div className="w-1/2 flex flex-col gap-1">
+                  <div className="w-full md:w-1/2 flex flex-col gap-2">
                     <label
                       className="text-lg font-custom uppercase font-medium"
                       htmlFor=""
@@ -146,7 +167,7 @@ function ContactUs() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-2">
                   <label
                     className="text-lg font-custom uppercase font-medium"
                     htmlFor=""
@@ -169,7 +190,7 @@ function ContactUs() {
                 {/* submit button  */}
                 <div className="flex justify-center mt-4">
                   <button
-                    className=" px-8 py-2 border-2 text-xl  border-blue-500 bg-blue-500 text-gray-50 font-medium rounded-lg transition-colors hover:bg-gray-100 hover:text-blue-600 shadow-md hover:shadow-lg font-custom font-normal"
+                    className=" px-8 py-2 border-2 text-xl  border-blue-500 bg-blue-500 text-gray-50 font-medium rounded-lg transition-colors hover:bg-gray-100 hover:text-blue-600 shadow-md hover:shadow-lg font-custom "
                     type="submit"
                   >
                     Send Message

@@ -1,8 +1,11 @@
 // import ImgTwo from "/assets/images/pinto_jpg.jpg";
 // import Img from "/assets/images/pintoOne.png";
 import { useEffect, useRef } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import Typed from "typed.js";
 import ImgFinal from "/assets/images/pinto.jpg";
+import PlaceholderImg from "/assets/images/placeholderImg.jpg";
 // import Img from "/assets/images/pintoTwo.png";
 function HomeSection() {
   const el = useRef(null);
@@ -70,7 +73,7 @@ function HomeSection() {
                 </p>
               </div>
               <div className="flex gap-2 items-center">
-                <span className="block h-2 w-2 rounded-full  bg-blue-500 animate-ping"></span>
+                <span className="block h-1.5 w-1.5 rounded-full  bg-blue-500 animate-ping"></span>
                 <p className="text-lg font-custom font-medium uppercase">
                   Available for new projects
                 </p>
@@ -97,12 +100,29 @@ function HomeSection() {
             <div className="absolute z-5 bg-blue-200 w-[250px] h-[250px] rounded-full"></div>
           </div> */}
 
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <img
               src={ImgFinal}
               alt=""
               className="max-w-full h-auto border-[20px] border-white shadow-2xl  rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"
             />
+          </div> */}
+
+          <div className="flex justify-center items-center">
+            <div className="max-w-full h-auto">
+              {/* <img
+                src={ImgFinal}
+                alt=""
+                className="max-w-full h-auto border-[20px] border-white shadow-2xl  rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"
+              /> */}
+              <LazyLoadImage
+                alt={"pinto image"}
+                src={ImgFinal} // use normal <img> attributes as props
+                placeholderSrc={PlaceholderImg}
+                effect="blur"
+                className="max-w-full h-auto border-[20px] border-white shadow-2xl  rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"
+              />
+            </div>
           </div>
         </div>
       </div>

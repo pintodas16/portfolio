@@ -10,7 +10,7 @@ function Training() {
             JavaScript (Intermediate) Certificate
           </h4>
           <h5 className="text-black text-xl font-custom font-normal py-1  mb-6 ">
-            Leetcode(June 2022- July 2022)
+            Hackerrank(June 2022- July 2022)
           </h5>
 
           <div className=" absolute right-5 bottom-3 ">
