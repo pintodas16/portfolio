@@ -37,7 +37,7 @@ function ContactUs() {
         },
         (error) => {
           console.log("FAILED...", error.text);
-          toast.success("There is something wrong happen!", {
+          toast.error("There is something wrong happen!", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
