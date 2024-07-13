@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { toast, Bounce } from "react-toastify";
 import { useRef, useState } from "react";
 function ContactUs() {
   const serviceKey = import.meta.env.VITE_SERVICE_KEY;
@@ -22,51 +23,44 @@ function ContactUs() {
           setName("");
           setEmail("");
           setDescription("");
-
-          // toast("I will contact you within very short while!", {
-          //   position: "bottom-center",
-          //   autoClose: 5000,
-          //   hideProgressBar: false,
-          //   closeOnClick: true,
-          //   pauseOnHover: true,
-          //   draggable: true,
-          //   progress: undefined,
-          //   theme: "colored",
-          //   transition: Bounce,
-          // });
+          toast.success("I will contact you within very short while!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
-          // toast("There is some wrong happen!", {
-          //   position: "bottom-center",
-          //   autoClose: 5000,
-          //   hideProgressBar: false,
-          //   closeOnClick: true,
-          //   pauseOnHover: true,
-          //   draggable: true,
-          //   progress: undefined,
-          //   theme: "colored",
-          //   transition: Bounce,
-          // });
+          toast.success("There is something wrong happen!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          });
         }
       );
   };
   return (
     <section className="bg-zinc-100" id="contact-me">
-      {/* <!-- title  --> */}
       <div className=" flex  gap-2 justify-center  items-center pt-16  ">
-        {/* <h5 className="font-semibold text-xl">My contact info</h5>
-        <h3 className="font-semibold text-4xl md:text-5xl">Contact</h3> */}
-
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
-        <h3 className="font-custom font-semibold text-2xl md:text-4xl lg:text-5xl">
+        <h3 className="font-custom font-semibold text-xl sm:text-2xl md:text-4xl lg:text-5xl">
           Contact Me
         </h3>
         <span className="w-24 h-2 animate-text bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500"></span>
       </div>
-      {/* container div  */}
       <div className="max-w-7xl mx-auto p-4 md:px-8 mt-16 pb-12 ">
-        {/* flex container  */}
         <div className="flex flex-col-reverse gap-12 md:flex-row md:gap-20">
           {/* social media  */}
           <div className=" basis-3/12 flex flex-col gap-6">
@@ -112,16 +106,16 @@ function ContactUs() {
               <h5 className="font-custom uppercase font-semibold text-xl mb-3  border-dotted border-b-2 pb-2 ">
                 Email
               </h5>
-              <div className="  ">
+              <div className="">
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pinto.cse.lu@gmail.com"
+                  href="mailto:pinto.cse.lu"
                   target="_blank"
-                  className="flex items-center gap-2 text-lg font-custom font-semibold"
+                  className="flex items-center gap-2 text-lg font-custom font-semibold hover:text-sky-500"
                 >
                   <span>
                     <i className="fa-regular fa-envelope"></i>
                   </span>
-                  <p>pinto.cse.lu@gmail.com</p>
+                  <p className="">pinto.cse.lu@gmail.com</p>
                 </a>
               </div>
             </div>
@@ -179,7 +173,7 @@ function ContactUs() {
                     placeholder="Write your thoughts here..."
                     id="w3review"
                     name="message"
-                    rows="4"
+                    rows="10"
                     cols="50"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}

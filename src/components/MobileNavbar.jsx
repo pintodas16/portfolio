@@ -24,7 +24,7 @@ function MobileNavbar({ showMobileNav, onCloseMobileNav, onScrollToSection }) {
       } fixed inset-0 z-0 w-full h-screen lg:hidden`}
     >
       <div className="absolute top-0 left-0 w-full h-[60%] bg-white"></div>
-      <div className="absolute bottom-0 left-0 w-full h-[40%] bg-black bg-opacity-40"></div>
+      <div className="absolute bottom-0 left-0 w-full h-[40%] bg-white bg-opacity-40"></div>
 
       <div className="relative py-10 px-6 flex flex-col gap-4 h-full">
         <ul className="flex flex-col justify-center items-center list-none gap-4">

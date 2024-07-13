@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { ToastContainer } from "react-toastify";
+
 import ContactUs from "./components/ContactUs.jsx";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -9,6 +9,8 @@ import Others from "./components/Others.jsx";
 import ProblemSolving from "./components/ProblemSolving";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -39,6 +41,7 @@ function App() {
       <Others activeSection={activeSection} />
       {/* <Recommendation activeSection={activeSection} /> */}
       <ContactUs />
+      <Footer />
       <ToastContainer
         position="bottom-center"
         autoClose={5000}
@@ -52,7 +55,6 @@ function App() {
         theme="colored"
         transition:Bounce
       />
-      <Footer />
     </>
   );
 }
