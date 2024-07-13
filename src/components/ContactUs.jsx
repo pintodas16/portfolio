@@ -173,7 +173,7 @@ function ContactUs() {
                     placeholder="Write your thoughts here..."
                     id="w3review"
                     name="message"
-                    rows="10"
+                    rows="5"
                     cols="50"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
