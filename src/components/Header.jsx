@@ -1,16 +1,29 @@
 import { Link } from "react-scroll";
 import DownloadBtn from "./DownloadBtn";
 import MobileNavbar from "./MobileNavbar";
+import { useState, useEffect } from "react";
 function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
-  // const [showMobileNav, setShowMobileNav] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // const handleMobileNav = () => {
-  //   setShowMobileNav(!showMobileNav);
-  // };
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <header
-      className={` sticky top-0 z-30 w-full border-b border-transparent bg-slate-50 max-md:border-gray-50 `}
+      className={`sticky top-0 left-0 w-full bg-white z-30 transition-shadow duration-300 ${
+        isScrolled ? "border-b border-gray-300 shadow-md" : ""
+      }`}
     >
       <div className="w-full max-w-7xl mx-auto p-4 md:px-8  flex justify-between items-center">
         <Link
@@ -118,12 +131,19 @@ function Header({ onScrollToSection, onHandleMobileNav, showMobileNav }) {
         <DownloadBtn className="hidden lg:flex justify-center items-center" />
 
         {/* hamburger button */}
+
         <button
-          onClick={onHandleMobileNav}
           id="menu-btn"
-          className="block  lg:hidden focus:outline-none"
+          onClick={onHandleMobileNav}
+          className={` z-30 block lg:hidden hamburger ${
+            showMobileNav ? "open" : ""
+          }`}
+          aria-expanded={showMobileNav ? "true" : "false"}
+          aria-controls="menu"
         >
-          <i className="text-2xl fa-solid fa-bars"></i>
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
         </button>
 
         {/* <!-- mobile navigation  --> */}

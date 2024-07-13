@@ -2,3 +2,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* hamburger manu  */
+.hamburger {
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+  background: none;
+}
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background: #000;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+}
+
+.hamburger-top {
+  top: 0;
+}
+
+.hamburger-middle {
+  top: 7px;
+}
+
+.hamburger-bottom {
+  top: 14px;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .hamburger-middle {
+  opacity: 0;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
